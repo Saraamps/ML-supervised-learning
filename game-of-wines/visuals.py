@@ -63,7 +63,7 @@ def visualize_classification_performance(results):
     # Create figure
     sns.set()
     sns.set_style("whitegrid")
-    fig, ax = plt.subplots(2, 3, figsize = (11,7))
+    fig, ax = plt.subplots(2, 3, figsize = (11,20))
     # print("VERSION:")
     # print(matplotlib.__version__)
     # Constants
