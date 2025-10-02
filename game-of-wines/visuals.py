@@ -134,7 +134,7 @@ def feature_plot(importances, X_train, y_train):
     sns.set_style("whitegrid")
 
     # Creat the plot
-    fig = plt.figure(figsize = (12,12))
+    fig = plt.figure(figsize=(12, 12), constrained_layout=True)
     plt.title("Normalized Weights for First Five Most Predictive Features", fontsize = 16)
     plt.bar(np.arange(11), values, width = 0.2, align="center", label = "Feature Weight")
     # plt.bar(np.arange(11) - 0.3, np.cumsum(values), width = 0.2, align = "center", color = '#00A0A0', \
